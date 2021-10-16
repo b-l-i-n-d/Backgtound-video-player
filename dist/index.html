@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Background video player</title>
+
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/tailwind.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <video
+            class="absolute object-cover h-screen w-screen back-video"
+            src="./assets/video.mp4"
+            autoplay
+            muted
+            loop
+        ></video>
+
+        <nav class="font-ubuntu text-3xl fixed top-0 inset-x-0 z-40">
+            <div class="max-w-6xl mx-auto px-4">
+                <div
+                    class="
+                        flex
+                        h-16
+                        items-center
+                        justify-between
+                        transition-all
+                        duration-300
+                        text-white
+                    "
+                >
+                    <div class="font-semibold">
+                        <a href="#">
+                            Portfo<span class="text-yellow-400">lio</span>
+                        </a>
+                    </div>
+                    <div class="text-xl font-medium">
+                        <ul class="md:space-x-2 lg:space-x-4 hidden md:block">
+                            <li class="inline-block">
+                                <a href="#home" class="menu-item">Home</a>
+                            </li>
+                            <li class="inline-block">
+                                <a href="#about" class="menu-item">About</a>
+                            </li>
+                            <li class="inline-block">
+                                <a href="#skills" class="menu-item">Skills</a>
+                            </li>
+                            <li class="inline-block">
+                                <a href="#experience" class="menu-item"
+                                    >Experience</a
+                                >
+                            </li>
+                            <li class="inline-block">
+                                <a href="#education" class="menu-item"
+                                    >Education</a
+                                >
+                            </li>
+                            <li class="inline-block">
+                                <a href="#projects" class="menu-item"
+                                    >Projects</a
+                                >
+                            </li>
+                            <li class="inline-block">
+                                <a href="#contact" class="menu-item">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="
+                            menu-btn
+                            text-2xl
+                            md:hidden
+                            sm:text-black
+                            md:text-white
+                            cursor-pointer
+                            z-50
+                        "
+                    >
+                        <i class="fas fa-bars"></i>
+                    </div>
+
+                    <!-- mobile view -->
+                    <ul
+                        class="
+                            mobile-menu
+                            font-medium
+                            md:hidden
+                            fixed
+                            h-screen
+                            w-full
+                            -right-full
+                            top-0
+                            bg-white
+                            text-black text-center
+                            pt-20
+                            transition-all
+                            duration-300
+                        "
+                    >
+                        <li class="block">
+                            <a
+                                href="#home"
+                                class="menu-item inline-block my-5 text-xl"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="block">
+                            <a
+                                href="#about"
+                                class="menu-item inline-block my-5 text-xl"
+                                >About</a
+                            >
+                        </li>
+                        <li class="block">
+                            <a
+                                href="#skills"
+                                class="menu-item inline-block my-5 text-xl"
+                                >Skills</a
+                            >
+                        </li>
+                        <li class="block">
+                            <a
+                                href="#experience"
+                                class="menu-item inline-block my-5 text-xl"
+                                >Experience</a
+                            >
+                        </li>
+                        <li class="block">
+                            <a
+                                href="#education"
+                                class="menu-item inline-block my-5 text-xl"
+                                >Education</a
+                            >
+                        </li>
+                        <li class="block">
+                            <a
+                                href="#projects"
+                                class="menu-item inline-block my-5 text-xl"
+                                >Projects</a
+                            >
+                        </li>
+                        <li class="block">
+                            <a
+                                href="#contact"
+                                class="menu-item inline-block my-5 text-xl"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div
+                class="
+                    max-w-6xl
+                    mx-auto
+                    flex
+                    h-screen
+                    justify-center
+                    items-center
+                    px-4
+                    text-white
+                    font-ubuntu
+                "
+            >
+                <div class="home-content flex-auto max-w-2xl">
+                    <div class="text-3xl">Hey, I am</div>
+                    <div class="text-7xl font-semibold">Fahim Faisal</div>
+                    <div class="text-3xl my-1">
+                        I am a
+                        <span
+                            class="text-yellow-300 font-medium"
+                            id="typing"
+                        ></span>
+                    </div>
+                    <a class="btn" href="#contact">Get in touch</a>
+                </div>
+            </div>
+        </section>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+            integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>

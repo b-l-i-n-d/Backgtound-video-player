@@ -1,0 +1,11 @@
+.active {
+    right: 0%;
+}
+
+.menu-btn i.active::before {
+    content: "\f00d";
+}
+
+.back-video {
+    z-index: -99;
+}

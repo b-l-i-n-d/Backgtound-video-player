@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .menu-item {
+        @apply block
+        font-medium
+        text-lg
+        transition-all
+        duration-300
+        border-b-4 border-transparent
+        hover:border-yellow-400;
+    }
+
+    .btn {
+        @apply inline-block
+        bg-yellow-400
+        text-white text-lg
+        px-5
+        py-2
+        mt-5
+        border-2 border-yellow-400 border-solid
+        rounded-xl
+        transition-all
+        duration-300
+        hover:text-yellow-500 hover:bg-white hover:shadow-2xl;
+    }
+}
